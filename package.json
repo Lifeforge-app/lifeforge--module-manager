@@ -5,7 +5,7 @@
     "type": "git",
     "url": "https://github.com/lifeforge-app/lifeforge-module-manager.git"
   },
-  "version": "0.0.5",
+  "version": "0.0.6",
   "author": "melvinchia3636 <melvinchia623600@gmail.com>",
   "description": "UI-based module manager for your LifeForge instance.",
   "scripts": {
