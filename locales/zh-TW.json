@@ -1,54 +1,76 @@
 {
-  "title": "成就",
-  "description": "慶祝你的大小勝利。",
-  "difficulties": {
-    "easy": "簡單",
-    "medium": "中等",
-    "hard": "困難",
-    "impossible": "不可能"
-  },
-  "headers": {
-    "easy": "簡單成就",
-    "medium": "中等成就",
-    "hard": "困難成就",
-    "impossible": "不可能成就",
-    "filtered": "已篩選",
-    "all": "所有成就"
-  },
-  "sidebar": {
-    "categories": "類別",
-    "difficulties": "難度",
-    "starredAchievements": "已加星成就",
-    "allCategories": "所有類別",
-    "allDifficulties": "所有難度"
-  },
-  "empty": {
-    "achievements": {
-      "title": "沒有成就",
-      "description": "你還沒有添加任何成就。點擊上面的按鈕添加一個。"
+    "title": "模組管理器",
+    "description": "基於UI的LifeForge實例模組管理器",
+    "subsections": {
+        "modules": "模組",
+        "categories": "類別"
     },
-    "categories": {
-      "title": "沒有類別",
-      "description": "你還沒有添加任何類別。點擊上面的按鈕添加一個。"
+    "buttons": {
+        "uninstall": "解除安裝",
+        "addTranslation": "新增翻譯"
+    },
+    "subsectionTitleAndDesc": {
+        "modules": {
+            "title": "模組",
+            "description": "安裝、更新和移除您LifeForge實例中的模組"
+        },
+        "categories": {
+            "title": "類別",
+            "description": "整理和重新排序側邊欄類別以自訂您的導覽"
+        }
+    },
+    "items": {
+        "category": "類別"
+    },
+    "inputs": {
+        "categoryKey": "類別鍵",
+        "translationKey": "翻譯鍵"
+    },
+    "empty": {
+        "category": {
+            "title": "未找到類別",
+            "description": "建立類別以開始"
+        },
+        "modules": {
+            "title": "未安裝模組",
+            "description": "從註冊表安裝模組以擴展您的LifeForge"
+        }
+    },
+    "modals": {
+        "category": {
+            "create": "建立類別",
+            "update": "更新類別"
+        },
+        "uninstall": {
+            "title": "解除安裝 {{module}}？",
+            "description": "此模組將從您的系統中移除，但您的資料將被保留。您可以隨時從註冊表重新安裝。"
+        },
+        "devMode": {
+            "enable": {
+                "title": "啟用開發模式",
+                "description": "啟用開發模式將直接從原始碼載入此模組，而非預先建置的套件。對模組程式碼的變更將即時熱重載，無需重新建置。\n\n在積極開發或自訂此模組時使用此功能。"
+            },
+            "disable": {
+                "title": "停用開發模式",
+                "description": "停用開發模式將切換回從預先建置的套件載入。請確保已重新建置模組以包含最新變更。"
+            }
+        },
+        "translationKey": {
+            "create": "建立翻譯鍵",
+            "update": "更新翻譯鍵"
+        }
+    },
+    "devMode": {
+        "label": "開發模式",
+        "enable": "啟用開發模式",
+        "disable": "停用開發模式",
+        "enabled": "{{module}} 已進入開發模式",
+        "disabled": "{{module}} 已退出開發模式"
+    },
+    "misc": {
+        "translations": "翻譯"
+    },
+    "notBuilt": {
+        "label": "未建置"
     }
-  },
-  "modals": {
-    "achievement": {
-      "create": "創建成就",
-      "update": "更新成就"
-    }
-  },
-  "inputs": {
-    "achievementTitle": "成就標題",
-    "achievementDifficulty": "成就難度",
-    "achievementThoughts": "成就想法",
-    "achievementCategory": "成就類別",
-    "categoryName": "類別名稱",
-    "categoryColor": "類別顏色",
-    "categoryIcon": "類別圖標"
-  },
-  "items": {
-    "achievement": "成就"
-  },
-  "accomplishedOn": "{{date}}達成"
 }

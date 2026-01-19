@@ -17,7 +17,7 @@ function ModifyTranslationKeyModal({
     title: `translationKey.${openType}`,
     submitButton: openType,
     onClose,
-    namespace: 'common.moduleManager'
+    namespace: 'apps.moduleManager'
   })
     .typesMap({
       key: 'text'

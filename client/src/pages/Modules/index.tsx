@@ -68,7 +68,7 @@ function Modules() {
     <>
       <ModuleHeader
         icon="tabler:apps"
-        namespace="common.moduleManager"
+        namespace="apps.moduleManager"
         title="modules"
         tKey="subsectionTitleAndDesc"
         totalItems={modulesQuery.data?.modules.length}
@@ -109,7 +109,7 @@ function Modules() {
               icon="tabler:apps-off"
               message={{
                 id: 'modules',
-                namespace: 'common.moduleManager'
+                namespace: 'apps.moduleManager'
               }}
             />
           )

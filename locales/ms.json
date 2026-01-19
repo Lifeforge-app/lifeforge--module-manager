@@ -1,54 +1,76 @@
 {
-  "title": "Pencapaian",
-  "description": "Raikan kemenangan anda besar dan kecil.",
-  "difficulties": {
-    "easy": "Mudah",
-    "medium": "Sederhana",
-    "hard": "Sukar",
-    "impossible": "Mustahil"
-  },
-  "headers": {
-    "easy": "Pencapaian Mudah",
-    "medium": "Pencapaian Sederhana",
-    "hard": "Pencapaian Sukar",
-    "impossible": "Pencapaian Mustahil",
-    "filtered": "Ditapis",
-    "all": "Semua Pencapaian"
-  },
-  "sidebar": {
-    "categories": "Kategori",
-    "difficulties": "Kesukaran",
-    "starredAchievements": "Pencapaian Berbintang",
-    "allCategories": "Semua Kategori",
-    "allDifficulties": "Semua Kesukaran"
-  },
-  "empty": {
-    "achievements": {
-      "title": "Tiada Pencapaian",
-      "description": "Anda belum menambah sebarang pencapaian lagi. Klik butang di atas untuk menambah satu."
+    "title": "Pengurus Modul",
+    "description": "Pengurus modul berasaskan UI untuk instans LifeForge anda",
+    "subsections": {
+        "modules": "Modul",
+        "categories": "Kategori"
     },
-    "categories": {
-      "title": "Tiada Kategori",
-      "description": "Anda belum menambah sebarang kategori lagi. Klik butang di atas untuk menambah satu."
+    "buttons": {
+        "uninstall": "Nyahpasang",
+        "addTranslation": "Tambah Terjemahan"
+    },
+    "subsectionTitleAndDesc": {
+        "modules": {
+            "title": "Modul",
+            "description": "Pasang, kemas kini, dan buang modul daripada instans LifeForge anda"
+        },
+        "categories": {
+            "title": "Kategori",
+            "description": "Susun dan susun semula kategori bar sisi untuk menyesuaikan navigasi anda"
+        }
+    },
+    "items": {
+        "category": "Kategori"
+    },
+    "inputs": {
+        "categoryKey": "Kunci Kategori",
+        "translationKey": "Kunci Terjemahan"
+    },
+    "empty": {
+        "category": {
+            "title": "Tiada kategori dijumpai",
+            "description": "Cipta kategori untuk memulakan"
+        },
+        "modules": {
+            "title": "Tiada modul dipasang",
+            "description": "Pasang modul dari registry untuk memperluaskan LifeForge anda"
+        }
+    },
+    "modals": {
+        "category": {
+            "create": "Cipta Kategori",
+            "update": "Kemas Kini Kategori"
+        },
+        "uninstall": {
+            "title": "Nyahpasang {{module}}?",
+            "description": "Modul ini akan dikeluarkan dari sistem anda tetapi data anda akan dipelihara. Anda boleh memasangnya semula pada bila-bila masa dari registri."
+        },
+        "devMode": {
+            "enable": {
+                "title": "Aktifkan Mod Pembangunan",
+                "description": "Mengaktifkan mod pembangunan akan memuatkan modul ini terus dari sumber dan bukan dari binaan pra-bina. Perubahan pada kod modul akan dimuat semula serta-merta tanpa perlu membina semula.\n\nGunakan ini semasa aktif membangunkan atau menyesuaikan modul ini."
+            },
+            "disable": {
+                "title": "Nyahaktifkan Mod Pembangunan",
+                "description": "Menyahaktifkan mod pembangunan akan bertukar semula kepada pemuatan dari binaan pra-bina. Pastikan anda telah membina semula modul untuk memasukkan perubahan terkini."
+            }
+        },
+        "translationKey": {
+            "create": "Cipta Kunci Terjemahan",
+            "update": "Kemas Kini Kunci Terjemahan"
+        }
+    },
+    "devMode": {
+        "label": "Mod Pembangunan",
+        "enable": "Aktifkan Mod Pembangunan",
+        "disable": "Nyahaktifkan Mod Pembangunan",
+        "enabled": "{{module}} kini dalam mod pembangunan",
+        "disabled": "{{module}} tidak lagi dalam mod pembangunan"
+    },
+    "misc": {
+        "translations": "Terjemahan"
+    },
+    "notBuilt": {
+        "label": "Tidak Dibina"
     }
-  },
-  "modals": {
-    "achievement": {
-      "create": "Cipta Pencapaian",
-      "update": "Kemaskini Pencapaian"
-    }
-  },
-  "inputs": {
-    "achievementTitle": "Tajuk Pencapaian",
-    "achievementDifficulty": "Kesukaran Pencapaian",
-    "achievementThoughts": "Pemikiran Pencapaian",
-    "achievementCategory": "Kategori Pencapaian",
-    "categoryName": "Nama Kategori",
-    "categoryColor": "Warna Kategori",
-    "categoryIcon": "Ikon Kategori"
-  },
-  "items": {
-    "achievement": "Pencapaian"
-  },
-  "accomplishedOn": "Dicapai {{date}}"
 }

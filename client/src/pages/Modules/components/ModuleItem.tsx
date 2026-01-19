@@ -30,7 +30,7 @@ function ModuleItem({
   // Module name format: @lifeforge/lifeforge--wallet -> lifeforge--wallet
   const moduleKey = module.name.replace('@lifeforge/', '')
 
-  const { t } = useTranslation([`apps.${moduleKey}`, 'common.moduleManager'])
+  const { t } = useTranslation([`apps.${moduleKey}`, 'apps.moduleManager'])
 
   const translatedTitle = t([`apps.${moduleKey}:title`, module.displayName])
 
@@ -50,10 +50,10 @@ function ModuleItem({
       if (data.success) {
         toast.success(
           data.isDevMode
-            ? t('common.moduleManager:devMode.enabled', {
+            ? t('apps.moduleManager:devMode.enabled', {
                 module: translatedTitle
               })
-            : t('common.moduleManager:devMode.disabled', {
+            : t('apps.moduleManager:devMode.disabled', {
                 module: translatedTitle
               })
         )
@@ -68,10 +68,10 @@ function ModuleItem({
 
   function handleUninstall() {
     open(ConfirmationModal, {
-      title: t('common.moduleManager:modals.uninstall.title', {
+      title: t('apps.moduleManager:modals.uninstall.title', {
         module: translatedTitle
       }),
-      description: t('common.moduleManager:modals.uninstall.description', {
+      description: t('apps.moduleManager:modals.uninstall.description', {
         module: translatedTitle
       }),
       onConfirm: async () => {
@@ -85,11 +85,11 @@ function ModuleItem({
 
     open(ConfirmationModal, {
       title: isEnabling
-        ? t('common.moduleManager:modals.devMode.enable.title')
-        : t('common.moduleManager:modals.devMode.disable.title'),
+        ? t('apps.moduleManager:modals.devMode.enable.title')
+        : t('apps.moduleManager:modals.devMode.disable.title'),
       description: isEnabling
-        ? t('common.moduleManager:modals.devMode.enable.description')
-        : t('common.moduleManager:modals.devMode.disable.description'),
+        ? t('apps.moduleManager:modals.devMode.enable.description')
+        : t('apps.moduleManager:modals.devMode.disable.description'),
       onConfirm: async () => {
         await devModeMutation.mutateAsync()
       }
@@ -113,7 +113,7 @@ function ModuleItem({
                   className="text-xs!"
                   color={COLORS.yellow[500]}
                   icon="tabler:code"
-                  label={t('common.moduleManager:devMode.label')}
+                  label={t('apps.moduleManager:devMode.label')}
                   variant="outlined"
                 />
               )}
@@ -122,7 +122,7 @@ function ModuleItem({
                   className="text-xs!"
                   color={COLORS.red[500]}
                   icon="tabler:alert-triangle"
-                  label={t('common.moduleManager:notBuilt.label')}
+                  label={t('apps.moduleManager:notBuilt.label')}
                   variant="outlined"
                 />
               )}
@@ -136,7 +136,7 @@ function ModuleItem({
               <ContextMenuItem
                 icon={module.isDevMode ? 'tabler:code-off' : 'tabler:code'}
                 label={module.isDevMode ? 'devMode.disable' : 'devMode.enable'}
-                namespace="common.moduleManager"
+                namespace="apps.moduleManager"
                 onClick={handleDevModeToggle}
               />
             )}
@@ -144,7 +144,7 @@ function ModuleItem({
               dangerous
               icon="tabler:trash"
               label="uninstall"
-              namespace="common.moduleManager"
+              namespace="apps.moduleManager"
               onClick={handleUninstall}
             />
           </ContextMenu>

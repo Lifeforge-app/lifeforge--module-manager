@@ -1,0 +1,76 @@
+{
+    "title": "Modül Yöneticisi",
+    "description": "LifeForge örneğiniz için kullanıcı arayüzü tabanlı modül yöneticisi",
+    "subsections": {
+        "modules": "Modüller",
+        "categories": "Kategoriler"
+    },
+    "buttons": {
+        "uninstall": "Kaldır",
+        "addTranslation": "Çeviri Ekle"
+    },
+    "subsectionTitleAndDesc": {
+        "modules": {
+            "title": "Modüller",
+            "description": "LifeForge örneğinize modül yükleyin, güncelleyin ve kaldırın"
+        },
+        "categories": {
+            "title": "Kategoriler",
+            "description": "Gezinmenizi özelleştirmek için kenar çubuğu kategorilerini düzenleyin ve yeniden sıralayın"
+        }
+    },
+    "items": {
+        "category": "Kategori"
+    },
+    "inputs": {
+        "categoryKey": "Kategori Anahtarı",
+        "translationKey": "Çeviri Anahtarı"
+    },
+    "empty": {
+        "category": {
+            "title": "Kategori bulunamadı",
+            "description": "Başlamak için kategori oluşturun"
+        },
+        "modules": {
+            "title": "Yüklü modül yok",
+            "description": "LifeForge'unuzu genişletmek için kayıt defterinden modül yükleyin"
+        }
+    },
+    "modals": {
+        "category": {
+            "create": "Kategori Oluştur",
+            "update": "Kategori Güncelle"
+        },
+        "uninstall": {
+            "title": "{{module}} kaldırılsın mı?",
+            "description": "Bu modül sisteminizden kaldırılacak ancak verileriniz korunacaktır. İstediğiniz zaman kayıt defterinden yeniden yükleyebilirsiniz."
+        },
+        "devMode": {
+            "enable": {
+                "title": "Geliştirme Modunu Etkinleştir",
+                "description": "Geliştirme modunu etkinleştirmek, bu modülü önceden oluşturulmuş paketler yerine doğrudan kaynaktan yükleyecektir. Modül kodundaki değişiklikler yeniden derleme gerektirmeden anında sıcak yeniden yükleme yapacaktır.\n\nBu modülü aktif olarak geliştirirken veya özelleştirirken kullanın."
+            },
+            "disable": {
+                "title": "Geliştirme Modunu Devre Dışı Bırak",
+                "description": "Geliştirme modunu devre dışı bırakmak, önceden oluşturulmuş paketlerden yüklemeye geri dönecektir. En son değişikliklerinizi dahil etmek için modülü yeniden oluşturduğunuzdan emin olun."
+            }
+        },
+        "translationKey": {
+            "create": "Çeviri Anahtarı Oluştur",
+            "update": "Çeviri Anahtarı Güncelle"
+        }
+    },
+    "devMode": {
+        "label": "Geliştirme Modu",
+        "enable": "Geliştirme Modunu Etkinleştir",
+        "disable": "Geliştirme Modunu Devre Dışı Bırak",
+        "enabled": "{{module}} artık geliştirme modunda",
+        "disabled": "{{module}} artık geliştirme modunda değil"
+    },
+    "misc": {
+        "translations": "Çeviriler"
+    },
+    "notBuilt": {
+        "label": "Hazırlanmamış"
+    }
+}

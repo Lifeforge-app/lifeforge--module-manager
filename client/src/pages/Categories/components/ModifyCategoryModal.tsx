@@ -30,7 +30,7 @@ function ModifyCategoryModal({
     onSubmit: (category: { key: string; value: Record<string, string> }) => void
   }
 }) {
-  const { t } = useTranslation('common.moduleManager')
+  const { t } = useTranslation('apps.moduleManager')
 
   const languagesQuery = useQuery(
     forgeAPI.untyped<{ name: string }[]>('locales/listLanguages').queryOptions()
@@ -112,7 +112,7 @@ function ModifyCategoryModal({
     <div className="min-w-[40vw]">
       <ModalHeader
         icon={openType === 'create' ? 'tabler:plus' : 'tabler:pencil'}
-        namespace="common.moduleManager"
+        namespace="apps.moduleManager"
         title={`category.${openType}`}
         onClose={onClose}
       />
@@ -138,7 +138,7 @@ function ModifyCategoryModal({
                   }
                   icon="tabler:category"
                   label="Category Key"
-                  namespace="common.moduleManager"
+                  namespace="apps.moduleManager"
                   placeholder="e.g. productivity, finance, information, etc."
                   value={data.key}
                   onChange={value => setData({ ...data, key: value })}
@@ -200,7 +200,7 @@ function ModifyCategoryModal({
                   <Button
                     className="w-full"
                     icon="tabler:plus"
-                    namespace="common.moduleManager"
+                    namespace="apps.moduleManager"
                     variant="plain"
                     onClick={() => {
                       open(ModifyTranslationKeyModal, {

@@ -31,7 +31,7 @@ import CategoryItem from './components/CategoryItem'
 import ModifyCategoryModal from './components/ModifyCategoryModal'
 
 function Categories() {
-  const { t } = useTranslation('common.moduleManager')
+  const { t } = useTranslation('apps.moduleManager')
 
   const { open } = useModalStore()
 
@@ -162,7 +162,7 @@ function Categories() {
           </Button>
         }
         icon="tabler:category"
-        namespace="common.moduleManager"
+        namespace="apps.moduleManager"
         title="categories"
         tKey="subsectionTitleAndDesc"
         totalItems={items.length}
@@ -207,7 +207,7 @@ function Categories() {
           icon="tabler:apps-off"
           message={{
             id: 'category',
-            namespace: 'common.moduleManager'
+            namespace: 'apps.moduleManager'
           }}
         />
       )}
