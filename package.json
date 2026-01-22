@@ -5,13 +5,13 @@
     "type": "git",
     "url": "https://github.com/lifeforge-app/lifeforge-module-manager.git"
   },
-  "version": "0.0.7",
+  "version": "0.0.8",
   "author": "melvinchia3636 <melvinchia623600@gmail.com>",
   "description": "UI-based module manager for your LifeForge instance.",
   "scripts": {
     "types": "cd client && bun tsc",
     "build:client": "cd client && bun run vite build",
-    "build:server": "bun build ./server/index.ts --outdir ./server/dist --target bun --external @lifeforge/server-utils --external zod"
+    "build:server": "bun build ./server/index.ts --outdir ./server/dist --target node --external @lifeforge/server-utils --external zod"
   },
   "dependencies": {
     "@dnd-kit/core": "^6.3.1",
